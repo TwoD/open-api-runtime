@@ -14,8 +14,14 @@
             "Jane\\OpenApiRuntime\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/twod/json-schema-runtime"
+        }
+    ],
     "require": {
-        "jane-php/json-schema-runtime": "^4.0",
+        "jane-php/json-schema-runtime": "php8-dev",
         "php-http/client-common": "^1.4 || ^2.0",
         "php-http/httplug": "^1.0 || ^2.0",
         "php-http/message-factory": "^1.0.2",
