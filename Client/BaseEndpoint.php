@@ -28,7 +28,7 @@ abstract class BaseEndpoint implements Endpoint
 
     public function getQueryString(): string
     {
-        return http_build_query($this->getQueryOptionsResolver()->resolve($this->queryParameters), null, '&', PHP_QUERY_RFC3986);
+        return http_build_query($this->getQueryOptionsResolver()->resolve($this->queryParameters), '', '&', PHP_QUERY_RFC3986);
     }
 
     public function getHeaders(array $baseHeaders = []): array
